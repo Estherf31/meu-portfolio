@@ -66,6 +66,27 @@ export default function App() {
             </div>
           </div>
         </section>
+           
+        <section id="contato" className="contato">
+          <h2>Vamos conversar?</h2>
+          <p>
+            Estou sempre aberta a novas ideias, trocas de conhecimento e oportunidades para construir soluções eficientes. Sinta-se à vontade para entrar em contato.
+          </p>
+          
+          <div className="contato-links">
+            <a href="mailto:estherf31@gmail.com" className="btn-contato principal">
+              Me mande um E-mail  
+            </a>
+            <a href="https://www.linkedin.com/in/esthernandes/" target="_blank" rel="noopener noreferrer" className="btn-contato">
+              LinkedIn
+            </a>
+      
+            <a href={`${import.meta.env.BASE_URL}curriculo.pdf`} target="_blank" rel="noopener noreferrer" className="btn-contato download">
+              Baixar Currículo (PDF)
+            </a>
+          </div>
+        </section>  
+
       </main>
 
       <footer className="rodape">

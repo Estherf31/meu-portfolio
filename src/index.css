@@ -180,3 +180,74 @@ nav a:hover {
 .card-projeto:hover .imagem-projeto {
   border-color: #555;
 }
+
+/* --- Seção de Contato Magnética --- */
+.contato {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 4.5rem 2rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+
+.contato h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.contato p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contato-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* O estilo base dos botões */
+.btn-contato {
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  background-color: transparent;
+}
+
+.btn-contato:hover {
+  border-color: #666;
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+}
+
+/* Destaque máximo para o botão de E-mail (Inverte as cores) */
+.btn-contato.principal {
+  background-color: var(--text-primary);
+  color: var(--bg-color);
+  border-color: var(--text-primary);
+}
+
+.btn-contato.principal:hover {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  transform: translateY(-4px);
+}
+
+/* Um toque visual sutil para o botão de PDF */
+.btn-contato.download {
+  border-style: dashed;
+}
