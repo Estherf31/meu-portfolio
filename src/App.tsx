@@ -4,7 +4,7 @@ export default function App() {
   return (
     <div className="container">
       <header className="cabecalho">
-        <span className="logo">Seu_Nome.dev</span>
+        <span className="logo">Esther.dev</span>
         <nav>
           <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
