@@ -1,0 +1,182 @@
+/* --- Variáveis de Tema (Profissionalismo na Arquitetura CSS) --- */
+:root {
+  --bg-color: #050505;
+  --card-bg: #111111;
+  --text-primary: #F8F9FA;
+  --text-secondary: #A0AEC0;
+  --border-color: #2D3748;
+  --accent-color: #E2E8F0;
+  --glow-color: rgba(255, 255, 255, 0.03);
+}
+
+/* --- Resets e Tipografia --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* --- Cabeçalho --- */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  margin-left: 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--text-primary);
+}
+
+/* --- Hero Section --- */
+.hero {
+  margin: 8rem 0;
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+/* Efeito moderno de texto em gradiente */
+.destaque {
+  background: linear-gradient(135deg, #FFFFFF 0%, #666666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.frase-destaque {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  border-left: 2px solid var(--border-color);
+  padding-left: 2rem;
+  max-width: 750px;
+  font-weight: 400;
+}
+
+/* --- Projetos --- */
+.projetos {
+  margin-bottom: 8rem;
+}
+
+.projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards com design de alto nível */
+.card-projeto {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animação mais natural */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-projeto:hover {
+  border-color: #555;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px var(--glow-color);
+}
+
+.card-projeto h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+.card-projeto p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  flex-grow: 1; /* Empurra as tags sempre pro fundo */
+}
+
+/* Tags polidas */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px; /* Bordas totalmente arredondadas */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* --- Rodapé --- */
+.rodape {
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.imagem-projeto {
+  width: 100%;
+  height: 240px; /* Altura fixa para manter os cards perfeitamente alinhados */
+  object-fit: contain; /* Mantém a imagem original 100% nítida, sem cortar ou esticar */
+  background-color: #0a0a0a; /* Um fundo quase preto para preencher o espaço que sobrar */
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #2a2a2a;
+  padding: 1rem; /* Dá um respiro em volta da imagem, parecendo uma moldura premium */
+  display: block;
+}
+
+.card-projeto:hover .imagem-projeto {
+  border-color: #555;
+}
