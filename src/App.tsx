@@ -10,6 +10,15 @@ export default function App() {
           <a href="#projetos">Projetos</a>
         </nav>
       </header>
+      {/* Cole esta nova seção exatemente AQUI, abaixo do cabeçalho */}
+      <section id="sobre" className="secao-sobre">
+        <h2 className="frase-destaque">
+          Experiente em desenvolvimento front-end, apaixonada por criar interfaces intuitivas e seguras.
+        </h2>
+        <p className="texto-academico">
+          Com formação em <strong>SISTEMAS DE INFORMAÇÃO</strong> pela Universidade Estácio de Sá, construo soluções que unem interfaces limpas a uma arquitetura sólida, garantindo que o usuário final nunca lide com fluxos confusos. Tenho um forte interesse em segurança no front-end, explorando ativamente métodos de proteção de código-fonte e ofuscação em JavaScript para garantir a integridade das aplicações.
+        </p>
+      </section>
 
       <main>
         <section id="sobre" className="hero">

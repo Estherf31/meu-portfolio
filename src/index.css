@@ -251,3 +251,35 @@ nav a:hover {
 .btn-contato.download {
   border-style: dashed;
 }
+
+/* --- Seção Sobre e Texto Acadêmico --- */
+.secao-sobre {
+  text-align: center;
+  padding: 4rem 1rem 3rem 1rem;
+}
+
+.secao-sobre h1 {
+  font-size: 3rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.secao-sobre .frase-destaque {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.texto-academico {
+  max-width: 700px; /* Impede que a linha fique muito comprida */
+  margin: 0 auto; /* Centraliza perfeitamente o parágrafo na tela */
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.texto-academico strong {
+  color: var(--text-primary); /* Destaca a faculdade e o curso */
+  font-weight: 600;
+}
