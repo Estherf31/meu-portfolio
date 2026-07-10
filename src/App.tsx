@@ -24,30 +24,37 @@ export default function App() {
           
           <div className="grid-projetos">
             <div className="card-projeto">
-              {/* Imagem do Projeto 1 */}
-              <img src="/fabrica.png" alt="Detalhe do Simulador de Tributos" className="imagem-projeto" />
-              
-              <h3>Simulador de Tributos</h3>
-              <p>Aplicação web para cálculo de impostos com integração de logo de marca. Foco em uma interface limpa, garantindo que o simulador fique perfeitamente alinhado no cabeçalho e apresente as taxas em formatos visuais simples para o usuário final.</p>
-              <div className="tags">
-                <span>JavaScript</span>
-                <span>CSS</span>
-                <span>UX/UI</span>
-              </div>
-            </div>
+          {/* Ajuste para o Simulador */}
+          <img 
+            src={`${import.meta.env.BASE_URL}simulador.png`} 
+            alt="Interface do Simulador" 
+            className="imagem-projeto" 
+          />
+          
+          <h3>Simulador de Tributos</h3>
+          <p>Aplicação web para cálculo de impostos com integração de logo de marca. Foco em uma interface limpa, garantindo que o simulador fique perfeitamente alinhado no cabeçalho e apresente as taxas em formatos visuais simples para o usuário final.</p>
+          <div className="tags">
+            <span>JavaScript</span>
+            <span>CSS</span>
+            <span>UX/UI</span>
+          </div>
+        </div>
 
-            <div className="card-projeto">
-              {/* Imagem do Projeto 2 */}
-              <img src="/simulador.png" alt="Feedback visual na validação" className="imagem-projeto" />
-              
-              <h3>Cálculo de Preço de Fábrica</h3>
-              <p>Módulo focado na resiliência de dados e tratamento de inputs. Implementação de lógicas precisas de debug para erros de entrada, garantindo feedback imediato ao usuário sem jamais quebrar o layout da tela.</p>
-              <div className="tags">
-                <span>TypeScript</span>
-                <span>Lógica de Negócio</span>
-              </div>
-            </div>
-
+        <div className="card-projeto">
+          {/* Ajuste para a Fábrica */}
+          <img 
+            src={`${import.meta.env.BASE_URL}fabrica.png`} 
+            alt="Código da Lógica de Negócio" 
+            className="imagem-projeto" 
+          />
+          
+          <h3>Cálculo de Preço de Fábrica</h3>
+          <p>Módulo focado na resiliência de dados e tratamento de inputs. Implementação de lógicas precisas de debug para erros de entrada, garantindo feedback imediato ao usuário sem jamais quebrar o layout da tela.</p>
+          <div className="tags">
+            <span>TypeScript</span>
+            <span>Lógica de Negócio</span>
+          </div>
+        </div>
             <div className="card-projeto">
               {/* O card de segurança pode ficar sem imagem para dar um respiro, ou você pode adicionar uma img aqui também */}
               <h3>Proteção de Código Front-end</h3>
