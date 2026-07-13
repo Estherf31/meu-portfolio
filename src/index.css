@@ -283,3 +283,69 @@ nav a:hover {
   color: var(--text-primary); /* Destaca a faculdade e o curso */
   font-weight: 600;
 }
+
+/* --- Estilo dos Links nos Cards de Projeto --- */
+.links-projeto {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color, #222);
+}
+
+.btn-link-projeto {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-link-projeto.vivo {
+  background-color: var(--text-primary, #fff);
+  color: var(--bg-color, #000);
+}
+.btn-link-projeto.vivo:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.btn-link-projeto.repo {
+  border: 1px solid var(--border-color, #444);
+  color: var(--text-secondary, #aaa);
+}
+.btn-link-projeto.repo:hover {
+  border-color: var(--text-primary, #fff);
+  color: var(--text-primary, #fff);
+}
+
+/* --- Destaque Exclusivo para o Projeto Principal --- */
+.card-projeto.destaque-principal {
+  border: 1px solid var(--border-focus, #555);
+  background: linear-gradient(145deg, var(--card-bg, #111), rgba(255, 255, 255, 0.02));
+}
+
+.title-row-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.title-row-badge h3 {
+  margin: 0;
+}
+
+.badge-destaque-top {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(234, 179, 8, 0.15);
+  color: #facc15;
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
